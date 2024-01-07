@@ -1,0 +1,854 @@
+@import url(https://fonts.bunny.net/css?family=Poppins);
+
+
+body {
+	overflow-x: hidden;
+}
+
+a.nav-link.active {
+	font-weight: bold;
+	background: rgba(19, 210, 222, 0.23);
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.03);
+	border-radius: 5px;
+}
+
+.text-truncate[data-bs-toggle].collapsed:after {
+	content: "▾";
+}
+
+.text-truncate[data-bs-toggle]:not(.collapsed):after {
+	content: "▴";
+}
+
+.submenu {
+	position: absolute;
+	z-index: 33;
+	background: white;
+	margin-top: -5px;
+	width: 100%;
+}
+
+a.nav-link {
+	text-transform: capitalize;
+}
+
+ul.pagination {
+	margin-top: 10px;
+}
+
+ul.navbar-nav.me-auto>li {
+	position: relative;
+	width: 145px;
+}
+
+td>form {
+	float: right;
+}
+
+.input-group-text {
+	text-transform: capitalize;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+a.toggle-vis {
+	background: rgba(113, 157, 186, 0.25);
+	border-radius: 10px;
+	gap: 47px;
+	padding: 10px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+}
+
+.toggle-vis.active {
+	background: rgb(113 157 186 / 80%);
+}
+
+.card {
+	border: none;
+}
+
+#companies {
+	width: 100% !important;
+}
+
+.col-md {
+	margin-bottom: 10px;
+}
+
+#sidebar-nav {
+	width: 260px;
+	background: #EAE9E9;
+}
+
+a.navbar-brand {
+	text-align: center;
+}
+
+a.dropdown-item,
+.nav-link {
+	font-style: normal;
+	/* font-weight: 500; */
+	font-size: 18px;
+	line-height: 20px;
+	/* identical to box height, or 100% */
+	color: #747474;
+	padding-left: 1rem !important;
+}
+
+span#card_title {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 31px;
+	display: flex;
+	color: #000000;
+	margin-left: 40px;
+}
+
+.card-header {
+	background: none;
+	margin-bottom: 50px;
+	border: none;
+}
+
+.card-header>div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: url('../imgs/Vector.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.create {
+	background: url('../imgs/activity.png') !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+	color: #747374;
+	background: rgba(19, 210, 222, 0.23);
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.03);
+	border-radius: 5px;
+}
+
+ul.navbar-nav.me-auto {
+	width: 100%;
+	padding: 10px;
+}
+
+ul.navbar-nav.me-auto>li {
+	width: 100%;
+	padding: 5px 0px;
+}
+
+div#collapseOne>ul>li>a {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+li.accordion-item {
+	background: none;
+	border: none;
+}
+
+.accordion-body>ul>li>a {
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	color: #888888;
+}
+
+main.col.ps-md-2.pt-2 {
+	overflow-x: scroll;
+}
+
+.user-img {
+	width: 50px;
+	height: 40px;
+	position: relative;
+}
+
+.user-img>img {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+}
+
+.main-profile.d-flex {
+	padding: 0px 15px;
+	align-items: center;
+}
+
+.user-info>span {
+	width: 100%;
+	display: inline-block;
+}
+
+span.usernames {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 20px;
+	/* identical to box height, or 133% */
+	color: #888888;
+}
+
+span.user-role {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 15px;
+	/* identical to box height, or 220% */
+	letter-spacing: 0.4px;
+	text-transform: uppercase;
+	color: rgba(136, 136, 136, 0.32);
+}
+
+span.update {
+	padding: 2px 8px;
+	gap: 10px;
+	width: 65px;
+	height: 24px;
+	background: rgba(9, 176, 187, 0.33);
+	border-radius: 5px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 20px;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+}
+
+.seperator {
+	width: 165px;
+	background: #000000;
+	opacity: 0.2;
+	border-radius: 71.5px;
+	height: 1px;
+	margin-top: 25px;
+	margin-bottom: 35px;
+	position: relative;
+	left: 15px;
+}
+
+.extraFields {
+	display: none;
+}
+
+.input-group.mb-12 {
+	border: 1px solid #09B0BB;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	height: 40px;
+	box-shadow: 0px 0px 4px #09B0BB;
+}
+
+label.input-group-text {
+	width: 278px;
+	text-align: center;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	color: #000000;
+	background: none;
+}
+
+.select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered {
+	line-height: 45px;
+}
+
+.label-textarea {
+	border: none;
+}
+
+.textarea {
+	display: flex;
+	align-content: flex-start;
+	justify-content: center;
+	align-items: center;
+	height: auto !important;
+}
+
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type=text],
+.iti--allow-dropdown input[type=tel],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type=text],
+.iti--separate-dial-code input[type=tel] {
+	height: 38px;
+}
+
+.select2-container--default .select2-selection--single {
+	height: 100% !important;
+}
+
+label.input-group-text {
+	flex: 0 0 20%;
+}
+
+/* .iti {
+    width: 71% !important;
+} */
+
+.input-group.mb-3 {
+	flex-wrap: nowrap;
+}
+
+div#cke_activity\[details\] {
+	width: 100% !important;
+}
+
+span.countHours {
+	margin-right: 5px;
+	display: flex;
+}
+
+span.position {
+	text-align: center;
+}
+
+span.countMinutes {
+	margin-right: 5px;
+	display: flex;
+}
+
+span.countSeconds {
+	display: flex;
+}
+
+div#countdown {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 15px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-end;
+	justify-content: flex-end;
+	padding: 0rem 1rem;
+}
+
+div#countdown>img {
+	width: 32px;
+	margin-left: 10px;
+}
+
+.main-holder {
+	display: flex;
+	justify-content: flex-end;
+	align-content: center;
+	align-items: center;
+}
+
+/* .accordion-button {
+    position: relative;
+  }
+  
+  .accordion-icon::before {
+    content: '+';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .accordion-button.collapsed .accordion-icon::before {
+    content: '-';
+  } */
+
+.title-collapse {
+	background: #09B0BB;
+	box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.21);
+	height: 66px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 38px;
+	/* identical to box height */
+	color: #FFFFFF;
+	margin-bottom: 15px;
+}
+
+.title-collapse>h4 {
+	line-height: 62px;
+}
+
+.accordion-item {
+	border: none;
+}
+
+.col-auto.px-0 {
+	background: #EAE9E9;
+}
+
+span.select2.select2-container.select2-container--default.select2-container--focus,
+span.select2.select2-container.select2-container--default.select2-container--below,
+span.select2.select2-container.select2-container--default {
+	width: 100% !important;
+}
+
+.remove {
+	display: none !important;
+}
+
+span.digit.static {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	color: #333333;
+}
+
+.checkout {
+	width: 85px;
+	height: 35px;
+	background: #E30A17;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25), inset 0px 0px 14px rgba(0, 0, 0, 0.25);
+	border-radius: 176px;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.checkout>img {
+	position: absolute;
+	left: 50%;
+	transform: translate(-56%, -50%);
+	top: 50%;
+}
+
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.spinner:before {
+	content: '';
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+	margin-left: -10px;
+	border-radius: 50%;
+	border: 2px solid #ccc;
+	border-top-color: #333;
+	animation: spinner .6s linear infinite;
+}
+
+.row.g-2 {
+	--bs-gutter-x: 1.5rem !important;
+	margin-bottom: 15px;
+}
+
+.description>p {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 160px;
+}
+
+.loader {
+	background: white;
+	z-index: 234;
+}
+
+input.select2-search__field {
+	width: auto !important;
+}
+
+.user-info {
+	width: 120px;
+}
+
+.profile {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 50px;
+}
+
+.profile>.col-md-10.d-flex {
+	margin-bottom: 15px;
+}
+
+.profile-input {
+	border-radius: 5px;
+	border: 1px;
+	border: 1px solid rgba(9, 176, 187, 1);
+}
+
+.profile-input:hover,
+.profile-input:active {
+	box-shadow: 0px 0px 6px 0px rgba(49, 176, 162, 1);
+}
+
+.profile>.col-md-6.d-flex {
+	margin-bottom: 15px;
+}
+
+label.col-sm-2.col-form-label {
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 15px;
+	text-align: left;
+}
+
+.password-label {
+	width: 210px;
+	margin-right: 45px;
+}
+
+.button {
+	display: flex !important;
+	align-content: center;
+	justify-content: space-around;
+}
+
+.profile-button {
+	width: 420px;
+	left: 40px;
+	position: relative;
+	border-radius: 10px;
+	background: rgba(9, 176, 187, 1);
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 38px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: white;
+}
+
+.timer-info {
+	margin-bottom: 50px;
+}
+
+.timer-controls>h6 {
+	font-family: Poppins;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 20px;
+	letter-spacing: 0px;
+	text-align: left;
+	margin-bottom: 40px;
+}
+
+.timer-info>h6 {
+	font-family: Poppins;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 20px;
+	letter-spacing: 0px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.timer-info>span {
+	font-family: Poppins;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 20px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.split {
+	width: 370px;
+	height: 60px;
+	padding: 10px 17px 10px 10px;
+	border-radius: 5px;
+	gap: 166px;
+	line-height: 40px;
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+
+.split-blue {
+	background: rgba(143, 233, 239, 1);
+}
+
+.split>span:first-child {
+	font-family: Poppins;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 20px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.split>span:last-child {
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 275;
+	line-height: 20px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+div#time-show {
+	font-family: Poppins;
+	font-size: 86px;
+	font-weight: 300;
+	line-height: 20px;
+	letter-spacing: 10px;
+	text-align: left;
+	margin-top: 7.5rem;
+}
+
+.clock {
+	height: 69px;
+}
+
+.circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 130px;
+	height: 129px;
+	border-radius: 85px;
+	gap: 10px;
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 300;
+	letter-spacing: 0px;
+	text-align: left;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+}
+
+.buttons {
+	width: 410px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-around;
+	align-items: center;
+	flex: 0;
+}
+
+.circle.start {
+	background: rgba(9, 176, 187, 1);
+}
+
+.circle.break {
+	background: rgba(77, 163, 221, 1);
+}
+
+.switcher-hold {
+	position: relative;
+	width: 130px;
+	height: 130px;
+}
+
+div#stop,
+.circle.breakOut {
+	display: none;
+	background: #dd5c5c;
+	position: absolute;
+	top: 0;
+}
+
+div#stop,
+div#breakOut {
+	line-height: 120px;
+}
+
+/* input {
+    height: 38px;
+} */
+
+.d-flex.rounded {
+	display: flex;
+	align-content: flex-start;
+	justify-content: space-between;
+}
+
+.image-container {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-content: flex-end;
+	justify-content: space-evenly;
+	align-items: center;
+	position: relative;
+}
+
+img.img-circles {
+	width: 183px;
+	height: 183px;
+	top: 361px;
+	left: 742px;
+	border-radius: 90px;
+}
+
+span.change-icon {
+	width: 42px;
+	height: 42px;
+	position: absolute;
+	background: #d9d9d9;
+	border: 1.5px solid rgba(0, 0, 0, 1);
+	border-radius: 50px;
+	text-align: center;
+	line-height: 34px;
+	font-size: 34px;
+	bottom: -5px;
+	right: 458px;
+	cursor: pointer;
+}
+
+.logo-login {
+	position: absolute;
+	z-index: 223;
+	width: 160px;
+	top: 30px;
+	left: 50px;
+}
+
+.logo-login>img {
+	width: 100%;
+}
+
+span.update:hover,
+span.update.active {
+	background: rgb(9 176 187);
+}
+
+.hide-in-activity {
+	display: none;
+}
+
+.input-group.mb-12 .invalid-feedback {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 223;
+	width: 400px;
+}
+
+.times {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: space-around;
+	justify-content: space-between;
+}
+
+.times>div {
+	display: flex;
+}
+
+span#cke_1_path {
+	display: none;
+}
+
+span.scope_name {
+	display: inline-block;
+	width: 100%;
+}
+
+.dt-buttons {
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+}
+
+.float-right {
+	float: right;
+}
+
+.dates-holding {
+	display: flex !important;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.select2 {
+	width: 100% !important;
+}
+
+.select2-results__options {
+	min-height: initial;
+	height: 185px;
+	overflow-y: scroll;
+}
+
+.dropdown-menu.show {
+	height: 170px;
+	overflow-y: scroll;
+}
+
+button#toggleColumnsDropdown,
+.dropdown-menu.show {
+	width: 236px;
+}
+
+.dropdown-menu.show>div {
+	padding-left: 35px !important;
+}
+
+#multi-chart {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+div#columnVisibilityDropdown {
+	margin-bottom: 15px;
+}
+
+span.notify {
+	position: absolute;
+	right: 95px;
+	background: red;
+	border-radius: 50%;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	top: 5px;
+}
+
+.btn.btn-dark {
+    position: absolute;
+    top: 0;
+    left: 226px;
+    background: none;
+    border: none;
+    color: black;
+	box-shadow: none;
+}
+
+.btn.btn-dark.collapsed {
+	left: 0;
+}
+/*title="Amniotic Membranes, Anti-Biofilm Compounds, Anti-Infectives, immuno-oncology, Internal Medicine, Lung disease therapies, Oncolytic Virus Vaccines, pediatric dentistry, Pediatric/pediatric infectious disease, Small Molecules, Small Molecules, lung diseases, Tissue engineering for cartilage injury and pathologies, Pediatric Hematology-Oncology, Adjuvants/mono/polyclonal AB, Advancing Early Drug Discovery, Antibodies and receptor-antibody fusion molecules, antibody and protein engineering, cell line development, and protein production, Antibody for stroke, Antibody-Evading Gene Therapy, Bone/Osteoporosis, Cardiovascular, CNS, Dermatology, Diabetes, Endocrinology, ENT, Gastroenterology, Hematology, Immunology, Infectious diseases, Inflammation, Internal diseases, Metabolic diseases, Nephrology, Neurology, Oncology, Ophthalmology, Orthopedics, Psychiatry, Pulmonology, Respiratory, Rheumatology, Surgery, Thrombosis, Urology, Vaccines"*/
